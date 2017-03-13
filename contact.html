@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>联系我们</title>
+		<link rel="shortcut icon" href="img/logo.ico"/>
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<div id="contact">
+			<h1>问题反馈</h1>
+			<form action="#">
+				<label for="name">
+					<span>用户名：</span><input type="text" id="name"  onblur="checkname()" />
+					<br><p id="username">用户名必须字母开头</p>
+				</label>
+				
+				<label for="tel">
+					<span>电话：</span><input type="tel" id="tel"  onblur="checktel()"/>
+				</label>
+				<br />
+				<label for="subject">
+					<span>您的问题:</span><input type="text" id="subject" placeholder="问题描述"/>
+				</label>
+				<br />
+				<label for="detail">
+					<span>详细描述：</span><textarea id="detail"></textarea>
+				</label>
+				<br />
+				<input type="submit"  value="Send" onclick="checkform()"/>
+			</form>
+		</div>
+		<script>
+			
+			function checkname(){
+				var name = document.getElementById("name").value;
+				var n = name.toString();
+				if(name==null||name.length==0){
+					alert("用户名不能为空");
+				}  
+				
+				else if(!(('a'<=n[0]&&n[0]<='z')||('A'<=n[0]&&n[0]<='Z'))){
+					document.getElementById("username").style.display  = "block";
+				}			
+			}
+			function checktel(){
+				var tel = document.getElementById("tel").value;
+				var t = tel.toString();
+				
+				var i=0;
+				for( i=0;i<t.length;i++){
+					if(t[i]>9&&t[i]<0){
+						alert('电话必须全部是数字');
+						break;
+					}
+				}			
+			}
+			
+			function checkform(){
+				var name = document.getElementById("name").value;
+				var tel = document.getElementById("tel").value;
+				var subject = document.getElementById("subject");
+				var detail = document.getElementById("detail");
+				
+				if((name==null||name=='')&&(tel==null||tel=='')&&(subject==null||subject=='')&&(detail==null||detail=='')){
+					alert('form不能为空');
+				}
+			}
+		</script>
+	</body>
+</html>

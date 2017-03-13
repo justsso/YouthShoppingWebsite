@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>品牌介绍</title>
+		<link rel="shortcut icon" href="img/logo.ico"/>
+		<style>
+			body{  padding: 0; margin: 0; font-family: "微软雅黑";/* background: url(img/bg-14.jpg) no-repeat;*/
+			background-size: cover;
+			 }
+			h1,h3{ font-weight: normal; color: #666666;}
+			h1,li,h3,p{ padding: 0; margin: 0;}
+			a{ text-decoration: none;}
+			li{ list-style: none; }
+			.fl{ float: left;}
+			.fr{ float: right;}
+			.clear{ zoom: 1;}
+			.clear:after{ content: ' ';display: block;clear: both;}
+			#nav{ width: 1226px; margin: 20px auto; }
+			#nav p{ font-size: 14px; color: darkgray;}
+			#brand_wrap{ width: 1126px; height: 500px; margin: 0 auto; 
+			padding: 50px;}
+			#about_nav{ width: 150px;  padding-top: 50px;}
+			#about_nav>li{ margin-bottom: 50px;  height: 50px;}
+			#intro{  width: 700px; margin-right: 100px;
+			height: 600px; border-top: 1px solid khaki;}
+			#about_nav>li>a{ font-size: 20px; text-shadow: 3px 3px 3px black;}
+			
+		</style>
+		<script>		
+			function getId(obj){
+				var oFrame = document.getElementById("myframe");
+				var oB = obj;
+				var oId = oB.id;
+				if(oId=="one"){
+					oFrame.src= "history.html";
+				} else if(oId=="two"){
+					oFrame.src = "intro.html";
+				}else{
+					oFrame.src = "belief.html";
+				}				
+			}
+		</script>
+	</head>
+	<body>
+		<div id="nav">
+			<p><a href="index.html">首页</a>  /  <a href="#"> 品牌</a></p>
+		</div>
+		<div id="brand_wrap" class="clear">
+			<ul class="fl" id="about_nav">
+				<li>
+					<a href="#history" id="one" onclick="getId(this)" style="color: white;">品牌溯源</a>
+				</li>
+				<li>
+					<a href="#" id="two" onclick="getId(this)" style="color: white;">品牌介绍</a>
+				</li>
+				<li>
+					<a href="#" id="three" onclick="getId(this)"  style="color: white;">文化宣言</a>
+				</li>
+			</ul>
+			<div class="fr" id="intro">
+				<iframe src="history.html" id="myframe" width="700px" height="600px" frameborder="no"></iframe>
+				
+			</div>
+		</div>
+		
+	</body>
+</html>

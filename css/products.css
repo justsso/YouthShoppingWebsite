@@ -1,0 +1,35 @@
+body{padding: 0;margin: 0;}
+li{list-style: none;}
+
+#products ul,table{width: 1228px;}
+#products ul li a,#products ul li .a_ban,table.goods td a,
+table.hot td a{display: inline-block;}
+#products ul li a,#products ul li a>img{width: 150px;height: 150px;	}
+#products ul li .a_ban,#products ul li .a_ban img{width: 230px;height: 300px;}
+table td,table.hot td a,table.hot td a img{width: 300px;}
+table.goods td a,table.goods td a img{width: 160px;height: 160px;}
+table.hot td,table.hot td a,table.hot td a img{height: 220px;}
+
+
+#products{padding-top: 30px;background-color: rgb(245,245,245);}
+#products ul{height: 330px;margin: 0 auto;margin-bottom: 20px;	}
+#products ul li{width: 230px;height: 260px;margin-right: 14px;float: left;
+background-color: #FFFFFF;text-align: center;	padding-top: 40px;transition: all .5s;}
+#products ul li:hover{box-shadow: 3px 5px  10px rgba(0,0,0,0.2);}
+#products ul li .a_ban{	margin-top: -40px;}
+
+table{margin: 100px auto;background-color: white;}
+table.goods,table td{height: 400px;}
+table.hot{height: 350px;}
+table td{background-color: rgb(245,245,245);border-top: 1px solid orange;
+text-align: center;}
+table.goods td a img{transform: scale(1.0);transition:all 0.6s ease ;}
+table.goods td a img:hover{transform: scale(1.2);}
+table.hot td{width: 296px;}
+
+#back{ position: fixed; right: 25px; bottom: 25px; width: 50px; height: 102px; 
+background-color: rgba(0,0,0,.3);display: none;}
+#back>a{ display: block; width: 50px; height: 50px; margin-bottom: 1px;font-size: 20px;}
+#btn{background: url(../img/返回顶部.png) left top no-repeat ;}
+a[title='返回首页']{background: url(../img/返回首页.png) left top no-repeat ;}
+#btn,a[title='返回首页']{	background-size: 50px 50px;}	

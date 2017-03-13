@@ -1,0 +1,99 @@
+body{background-color: #f5f5f5;}
+body,h1,ul,li,p,table,ol{padding: 0;margin: 0;font-family: "微软雅黑";font-weight: normal;}
+
+a{ text-decoration: none;}
+li{ list-style: none;}
+
+
+#head {min-height: 730px;background: url(../img/bg-11.jpg) no-repeat 0 0;
+background-size: cover;	margin-bottom: 50px;color: rgb(233,229,219);}
+#main { width: 1140px; height: 850px; margin: 0 auto;background-color: white;
+border-radius: 22px 22px 0 0;}
+#foot {height: 450px;background-color: #444;margin-top: 100px;}
+
+
+
+#head_top{  width: 100%; background-color: #333;position: fixed;top: 0;left: 0;
+background: url(../img/bg-10.jpg);}
+#head_top .logo,#head_top .nav,#head_top .concact{position: absolute;}
+
+#head_top,#head_top .logo,#head_top .nav,#head_top .concact,#head_top .logo h1,
+#head_top .nav li,#head_top .nav li a{ height: 80px;}
+#head_top_box .logo h1{ background: /*url(../img/logo-text.png)*/ left top ; background-size:  100px 80px;
+font-family: "方正清刻本悦宋简体";}
+#banner,#main_top,#foot .foot_container,#contact{ width: 1140px;}
+#banner,#main_top,#foot .foot_container,#main_top>p,table td span{ margin: 0 auto;}
+#main_top,#contact,#head_top .concact a,#banner ul li,#foot .foot_container>ul>li,
+table td span,table,#main_top h1{ text-align: center;}
+#banner .btns a,#head_top .concact a,#foot .foot_container>ul>li>p>span,
+#contact>form>label>span{display: inline-block;}
+
+#head_top .logo{left: 100px; top: 0;}
+#head_top .nav{left: 480px; top: 0; /*width: 525px;*/}
+#head_top .concact{right: 110px;top: 20px; }
+#banner{ height: 390px;padding-top: 340px; }
+
+#main_top{ height: 110px;padding-top: 50px;}
+
+#foot .foot_container{height: 400px;}
+
+#contact{height: 700px;margin: 100px auto;background: #FFFFFF;padding-top: 30px;border-radius: 20px;}
+
+
+#head_top .logo h1{font-size: 50px;line-height: 80px;color: #FFFFFF;}
+#head_top .nav li{float: left;padding: 0 15px;}
+#head_top .nav li a{color: white; line-height: 80px; transition: all .5s; }
+#head_top .nav li a:hover{color: red;}
+#head_top .concact a{width: 31px;height: 31px; line-height: 31px;border-radius: 50%;
+background-color: white;font-size: 26px; color: black;}
+#head_top .concact a:hover{background: #999999;}
+#head_top .concact .a2{background-position: -34px -1px;}
+#head_top .concact .a3{background-position: -68px -1px;}
+#head_top .concact .a4{background-position: -102px -1px;}
+#banner ul{position: relative; overflow: hidden;height: 162px;}
+#banner ul li,#banner .btns{position: absolute; color: #666666;}	
+#banner ul li{ position: absolute; display: none;}
+
+#text_list li.li_up{z-index: 9999;}
+
+#banner ul li h1{font-size: 45px;letter-spacing: 2px;margin-bottom: 38px; text-align: center; }
+#banner ul li p{font-weight: lighter;line-height: 2em; }
+#banner .btns{width: 150px;height: 50px;bottom: 0;left: 50%;margin-left: -75px;}
+#banner .btns a{width: 15px;height: 15px;border-radius: 50%;border: 1px solid white;
+margin-right: 10px;}
+#banner .btns a:hover{}
+#main_top{height: 200px;}
+#main_top h1{color: #CB4042;margin-bottom: 30px;}
+#main_top>p{width: 60%;line-height: 1.5em;}
+table{height: 600px;width: 100%;border-collapse: collapse;border-spacing: 0;}
+td{display: table-cell;word-break: break-all;}
+table td span{display: block;width: 40px;height: 40px;line-height: 40px;color: palevioletred;
+font-size: 40px;}
+table td h3{font-size: 25px;color: #CB4042;}
+table td p{width: 80%;margin: 30px auto 0;color: #666;}
+#foot .foot_container>ul>li{width: 20%;float: left;height: 370px;padding-top: 30px;}
+#foot .foot_container>ul>li>p{height: 30px;color: white;line-height: 30px;font-size: 18px;
+margin-bottom: 30px;}
+#foot .foot_container>ul>li>p>span{width: 30px;font-size: 30px;margin-right: 5px;}
+#foot .foot_container>ul>li>ol>li{margin-bottom: 20px;}
+#foot .foot_container>ul>li>ol>li>a{color: #999;font-size: 14px;}
+#foot .foot_container>ul>li>ol>li>a:hover{color: orange;}
+#contact>h1{width: 500px;margin: 50px auto;border-bottom: 1px solid lightgray;padding-bottom: 30px;}
+#contact>form>label{display: block;margin-bottom: 30px;}
+#contact>form>label>span{	width:120px;text-align: right;}
+#contact>form>label>input{height: 25px;width: 350px;}
+#contact>form textarea{width: 350px;resize: vertical;}
+#contact>form>label>input,#contact>form textarea{border: none;outline: none;border: 1px solid darkgray;
+border-radius: 5px;	padding: 5px;}
+#contact>form>label>input:focus,#contact>form textarea:focus{border-color: orange;}
+input[type='submit']{width: 70px;height: 40px;color: white;background-color: orange;border: none;
+outline: none;	font-size: 20px;	border-radius: 5px;transition: all 1s;}
+input[type='submit']:hover{background-color: orangered;}
+.btns a.on{ background-color: #FFFFFF;}
+
+#username{
+	display: none;	
+	text-align: center;
+	font-size: 14px;
+	color: red;	
+}
